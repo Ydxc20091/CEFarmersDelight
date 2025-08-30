@@ -4,32 +4,18 @@ version = "1.2.0"
 plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.paperweight)
-    alias(libs.plugins.nova)
 }
 
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://repo.xenondevs.xyz/releases")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     paperweight.paperDevBundle(libs.versions.paper)
     implementation(libs.nova)
-}
-
-addon {
-    name = "FarmersDelight"
-    version = project.version.toString()
-    main = "fr.ateastudio.farmersdelight.NovaFarmersDelight"
-    authors = listOf("Katalijst")
-    description = "Farming's Delight ported to Nova"
-    website = "https://atea-studio.fr/nova-addons"
-    prefix = "FarmersDelight"
-    
-    // output directory for the generated addon jar is read from the "outDir" project property (-PoutDir="...")
-    val outDir = project.findProperty("outDir")
-    if (outDir is String)
-        destination.set(File(outDir))
+    implementation("com.github.Xiao-MoMi:craft-engine:main-SNAPSHOT")
 }
 
