@@ -11,11 +11,13 @@ repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://repo.xenondevs.xyz/releases")
+    maven("https://repo.momirealms.net/releases/")
 }
 
 dependencies {
     paperweight.paperDevBundle(libs.versions.paper)
     implementation(libs.nova)
+    implementation("net.momirealms:craft-engine-bukkit:0.0.62")
 }
 
 addon {

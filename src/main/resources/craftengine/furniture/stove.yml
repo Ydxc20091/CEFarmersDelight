@@ -1,0 +1,38 @@
+items:
+  farmersdelight:stove:
+    material: stone
+    custom-model-data: 2000
+    data:
+      item-name: "Stove"
+    model:
+      type: minecraft:model
+      path: minecraft:item/farmersdelight/stove
+    behavior:
+      type: furniture_item
+      furniture:
+        settings:
+          item: farmersdelight:stove
+          sounds:
+            break: minecraft:block.stone.break
+            place: minecraft:block.stone.place
+        placement:
+          ground:
+            loot-spawn-offset: 0,0,0
+            rules:
+              rotation: ANY
+              alignment: CENTER
+            elements:
+              - item: farmersdelight:stove
+                display-transform: NONE
+                billboard: FIXED
+                translation: 0,0,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1.0
+                height: 1.0
+                interactive: true
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: farmersdelight:stove

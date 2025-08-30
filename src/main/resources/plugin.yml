@@ -1,0 +1,5 @@
+name: FarmersDelightCE
+version: 1.2.0
+main: fr.ateastudio.farmersdelight.craftengine.CraftEngineFarmersDelight
+api-version: '1.20'
+depend: [CraftEngine]
