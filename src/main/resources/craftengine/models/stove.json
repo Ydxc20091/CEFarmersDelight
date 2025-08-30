@@ -1,0 +1,8 @@
+{
+  "id": "farmersdelight:stove",
+  "model": "craftengine:furniture/stove",
+  "interactions": {
+    "use": "cook",
+    "break": "drop_contents"
+  }
+}
