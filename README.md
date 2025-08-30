@@ -47,3 +47,11 @@ If you encounter any issues or have feature requests, please open an issue on Gi
 
 Happy farming! 🌾🍽
 
+## CraftEngine Migration (Experimental)
+
+This repository now contains a minimal scaffolding for a future **CraftEngine**
+port. The `CraftEngineFarmersDelight` entry uses a simple furniture block
+storage to register modelled blocks that can be interacted with. An example
+model configuration is provided at
+`src/main/resources/craftengine/furniture/stove.yml`.
+
